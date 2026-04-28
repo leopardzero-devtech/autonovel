@@ -1,5 +1,14 @@
 # AUTONOVEL: Reproducible Novel Pipeline
 
+> **Claude Code edition note.**
+> 이 문서는 원래 자체 Anthropic API 로 호출하던 자동화 파이프라인의
+> 사양서다. 이 fork 에서는 모든 `.py` 자동화 스크립트가 제거됐고,
+> Claude Code 호스트 세션이 그 역할을 직접 수행한다. 따라서 아래의
+> 셸 명령(`uv run python ...`) 과 도구 파일명은 더 이상 실행 가능한
+> 명령이 아니라 **단계의 의도와 룰을 가리키는 라벨** 로 읽어야 한다.
+> 산출 파일 경로(`world.md`, `chapters/ch_NN.md`, `state.json` 등) 와
+> 단계별 학습된 교훈은 그대로 유효하다.
+
 ## Overview
 
 This document captures the full automated pipeline for generating,
@@ -418,114 +427,33 @@ PHASE 3b: OPUS REVIEW LOOP (deep, prose-level refinement)
 
 ---
 
-## WHAT NEEDS BUILDING FOR FULL AUTOMATION
+## ORCHESTRATION (Claude Code edition)
 
-### Already exists (on branch, needs merge to master):
-  - gen_revision.py
-  - reader_panel.py
-  - build_arc_summary.py
-  - build_outline.py
-  - voice_fingerprint.py
-  - typeset/novel.tex + build_tex.py
+원본의 `run_pipeline.py` 자동 오케스트레이터는 제거됐다. 대신 호스트
+세션이 위 단계들을 다음 흐름으로 직접 수행한다:
 
-### Needs building:
-  1. run_pipeline.py — Orchestrator that runs all phases
-     - Phase 1: loop foundation generation + evaluation
-     - Phase 2: sequential drafting with retry logic
-     - Phase 3: revision cycles with automated brief generation
-     - Phase 4: export
-     - Score plateau detection (stop when Δ < 0.5 across 2 cycles)
-     - Automated brief writing from panel feedback + eval callouts
-
-  2. gen_brief.py — Auto-generate revision briefs from structured feedback
-     Input: panel JSON + eval JSON + chapter text
-     Output: a revision brief (.md) suitable for gen_revision.py
-     This is the key automation gap — currently briefs are hand-written.
-
-  3. apply_cuts.py — Batch cut applicator
-     Input: edit_logs/chNN_cuts.json
-     Output: patched chapter files
-     Filters by cut type (OVER-EXPLAIN, REDUNDANT)
-     Handles quote-matching failures gracefully
-
-  4. Clean master branch:
-     - Merge tools from branch (gen_revision, reader_panel, etc.)
-     - Strip story-specific content from template files
-     - Add .env.example
-     - Update WORKFLOW.md to reference PIPELINE.md
-     - Update README.md with the full automation story
-
----
-
-## THE ORCHESTRATOR (run_pipeline.py spec)
-
-```python
-# Pseudocode for the fully automated pipeline
-
-def run_pipeline(seed_path, tag="run1"):
-    setup(tag, seed_path)
-    
-    # Phase 1
-    while state.foundation_score < 7.5 or state.lore_score < 7.0:
-        weakest = evaluate_foundation()
-        improve_layer(weakest)
-        score = evaluate_foundation()
-        if score > state.foundation_score:
-            commit(f"foundation: improve {weakest}")
-            state.foundation_score = score
-        else:
-            reset()
-    
-    state.phase = "drafting"
-    
-    # Phase 2
-    for ch in range(1, state.chapters_total + 1):
-        for attempt in range(5):
-            draft_chapter(ch)
-            score = evaluate_chapter(ch)
-            if score > 6.0:
-                commit(f"drafting: ch {ch} score {score}")
-                break
-            else:
-                reset()
-        mechanical_slop_pass(ch)
-    
-    state.phase = "revision"
-    
-    # Phase 3
-    prev_score = 0
-    for cycle in range(1, 7):
-        # Diagnosis
-        cuts = adversarial_edit_all()
-        apply_top_cuts(cuts, types=["OVER-EXPLAIN", "REDUNDANT"])
-        panel = run_reader_panel()
-        
-        # Structural fixes
-        for item in panel.consensus_items():
-            brief = generate_brief(item, panel, cuts)
-            revise_chapter(item.chapter, brief)
-            if evaluate_chapter(item.chapter) > previous:
-                commit(f"cycle {cycle}: {item.type}")
-            else:
-                reset()
-        
-        # Full evaluation
-        score = evaluate_full()
-        if abs(score - prev_score) < 0.5 and cycle >= 3:
-            break  # plateau
-        prev_score = score
-        
-        # Targeted fixes from eval
-        fix_eval_callouts(score.top_suggestion)
-        slop_pass(rewritten_chapters)
-        
-        commit(f"Cycle {cycle} complete: score {score}")
-    
-    # Phase 4
-    rebuild_docs()
-    typeset()
-    export()
 ```
+Phase 1: foundation_score 와 lore_score 가 7.5 / 7.0 을 넘을 때까지
+         가장 약한 레이어를 골라 개선 → 평가 → 개선되면 git commit,
+         아니면 git reset --hard HEAD~1.
+
+Phase 2: outline 의 챕터 순서대로 작성. 한 챕터당 최대 5회 시도.
+         score > 6.0 이면 commit, 아니면 reset & retry.
+         초안 후 ANTI-SLOP 정규식으로 일괄 슬롭 패스.
+
+Phase 3a: 사이클당 (적대적 컷 → top 컷 적용 → 리더 패널 →
+          consensus 항목으로 리비전 브리프 → 챕터 재작성 → 평가).
+          2 사이클 연속 |Δscore| < 0.5 면 종료 (plateau).
+
+Phase 3b: 풀 원고 깊은 리뷰 → 항목 파싱 → top 항목 수정 →
+          반복. major unqualified 가 사라지면 종료.
+
+Phase 4:  outline / arc summary 재빌드 → typeset → ePub → 랜딩.
+```
+
+각 단계의 keep/discard 와 score 갱신은 `git commit` 메시지와
+`state.json` 에 영구화한다. 평가·패널·리뷰는 서브에이전트로 분리해
+작가 자아와 판사 자아를 섞지 않는다.
 
 ---
 
