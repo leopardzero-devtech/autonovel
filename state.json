@@ -1,11 +1,97 @@
 {
   "phase": "foundation",
-  "current_focus": null,
-  "iteration": 0,
-  "foundation_score": 0.0,
-  "lore_score": 0.0,
+  "tag": "nameless-god",
+  "title": "사막의 무명신",
+  "language": "ko",
+  "format": "korean_web_novel",
+  "current_focus": "phase 1 cycle 1 baseline (Arc 1 정밀 spec 포함)",
+  "iteration": 1,
+  "foundation_score": 7.6,
+  "lore_score": 8.4,
   "chapters_drafted": 0,
-  "chapters_total": 0,
+  "chapters_total": 200,
+  "chapters_planned_arc1": 50,
   "novel_score": 0.0,
-  "debts": []
+  "weakest_dimension": "voice_korean_webnovel_specificity",
+  "next_target": "한국 웹소설 호흡으로 회차 시필 1-3개 작성. 특히 회 1, 회 4 (잊힌 신 첫 속삭임), 회 50 (Arc 1 클라이맥스) 의 voice 시필로 톤 calibration",
+  "arcs": {
+    "arc1": {
+      "range": "1-50",
+      "status": "spec_complete",
+      "macro": "의식의 날과 도주"
+    },
+    "arc2": {
+      "range": "51-110",
+      "status": "macro_only",
+      "macro": "동맹과 폭로"
+    },
+    "arc3": {
+      "range": "111-170",
+      "status": "macro_only",
+      "macro": "신들의 질서와의 전쟁"
+    },
+    "arc4": {
+      "range": "171-200+",
+      "status": "macro_only",
+      "macro": "파멸과 작별"
+    }
+  },
+  "debts": [
+    {
+      "type": "voice_korean_webnovel",
+      "note": "voice.md Part 2 가 캐릭터별 voice 차별화와 회차 호흡 룰을 명세했지만 실제 시필(exemplar) 은 5개로 영문 단권 기준에 가까움. 한국 웹소설 회당 5,000-5,200자 호흡의 시필이 아직 없음. drafting 진입 전 회 1·회 4·회 50 의 시필 필요."
+    },
+    {
+      "type": "anti_slop_ko_validation",
+      "note": "ANTI-SLOP-KO.md 가 새 사전이라 통계 임계가 추측치. 첫 5-10회 작성 후 실제 빈도와 비교해 임계 조정 필요."
+    },
+    {
+      "type": "minor_chars",
+      "note": "Arc 2-4 의 핵심 인물 (외방 부족 지도자, 의술 신후, 신왕의 측근, 자흐라 그림자의 구체 외형 등) 이 placeholder. Arc 2 spec 작성 시 expand."
+    },
+    {
+      "type": "world_geography_arc1",
+      "note": "도성 내부 (12 신전 광장, 신왕궁, 도서관) 의 구체 동선이 Arc 1 회 1-3, 회 17-19, 회 26-30 의 사건에 필요. 첫 5-10회 작성 시 추가 캐논 항목 누적 예상."
+    },
+    {
+      "type": "antagonist_balance",
+      "note": "신왕 아셀이 Arc 3-4 의 정점 적인데 Arc 1 에선 회 3 잠시 등장 후 부재. 그의 Arc 2 잠복 묘사·Arc 3 등장의 동선이 outline 거시에서만 다뤄짐. Arc 2 spec 시 정밀화 필요."
+    }
+  ],
+  "evaluation_log": [
+    {
+      "iteration": 1,
+      "scores": {
+        "world_lore": 8.5,
+        "lore_interconnection": 9.0,
+        "characters": 8.0,
+        "outline_structure": 8.0,
+        "outline_arc1_density": 8.5,
+        "foreshadowing": 8.5,
+        "voice_part1_adherence": 8.0,
+        "voice_korean_webnovel_specificity": 6.0,
+        "theme_coherence": 9.0,
+        "mystery_payoff": 8.5,
+        "format_fit_korean_webnovel": 7.0
+      },
+      "weakest": "voice_korean_webnovel_specificity",
+      "second_weakest": "format_fit_korean_webnovel",
+      "top_suggestions": [
+        "회 1·회 4·회 50 의 voice 시필을 한국 웹소설 회당 분량(5,000-5,200자) 으로 1편씩 작성. mythic + webnovel 호흡의 실증.",
+        "ANTI-SLOP-KO.md 의 Tier 1·4·5 룰을 첫 시필로 검증. 임계 빈도 조정.",
+        "잊힌 신의 속삭임 형식(들여쓰기·인용)을 시각적으로 어떻게 회차 안에 배치할지 voice.md 에 명시."
+      ],
+      "decision": "keep — foundation_score 7.6 이 임계 7.5 통과. lore 9.0 으로 매우 강함. voice 한국 웹소설 specificity 가 약점이지만 drafting 진입 전 시필로 보강 가능."
+    }
+  ],
+  "files": {
+    "seed": "seed.txt",
+    "world": "world.md",
+    "characters": "characters.md",
+    "outline": "outline.md",
+    "voice": "voice.md",
+    "canon": "canon.md",
+    "mystery_author_only": "MYSTERY.md",
+    "anti_slop_ko": "ANTI-SLOP-KO.md"
+  }
 }

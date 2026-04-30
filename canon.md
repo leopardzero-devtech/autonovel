@@ -1,68 +1,147 @@
-# Canon
+# Canon — 사막의 무명신
 
-Hard facts about the world. Every entry here is a constraint the
-evaluator checks against. If the prose contradicts canon, it's a bug.
-
-This file grows during foundation and drafting. When a fact is
-established (in world.md, characters.md, or in a chapter), it gets
-logged here as canonical. The evaluator cross-references canon
-against every chapter.
-
-## How to use
-
-Each entry: a short, falsifiable statement with the source.
-Group by category. Keep it flat and scannable -- this isn't prose,
-it's a database.
+Hard facts. 작성된 모든 산문은 이 캐논과 모순되면 안 된다.
+Phase 1 시드 항목들. Phase 2 (drafting) 에서 챕터별 추가.
 
 ---
 
 ## Geography
-<!-- Example:
-- Vael is 12 days' ride north of Tasren. (world.md)
-- The Ashenmoor lies between Vael and the Sundering Peaks. (world.md)
-- The River Kell flows south through Tasren to the sea. (ch_02)
--->
+
+- 케르샤 신왕국 = 사막 가운데 강 하르라를 따라 형성. 남북 약 2,400리,
+  동서 약 1,800리. (world.md)
+- 도성 = 나르하트. 강 하르라의 가장 큰 굽이. 12 신전이 광장을 둘러
+  쌈. 신왕궁 = 광장 북쪽, 가장 큰 피라미드형. (world.md)
+- 외성 샤르 = 도성 외곽 빈민가. 약한 신탁자·노예 거주. (world.md)
+- 카드라 사막 = 도성 서쪽. 사막 신후 영토. 옛 폐허 다수. (world.md)
+- 테무르 강 상류 = 강 신후 영토. 비옥한 농경지. (world.md)
+- 이쉬 산맥 = 동쪽 경계. 외방 부족 거주. (world.md)
+- 검은 도시 자흐라 = 옛 봉인 사건 폐허. 카드라 사막 가장 깊은 곳.
+  봉인의 근원. (world.md)
+- 거리 — 도성→자흐라 낙타 14-20일. 도성→이쉬 낙타 10-12일.
+  도성→카드라 변두리 낙타 3-5일. (world.md)
 
 ## Timeline
-<!-- Example:
-- The Sundering happened 300 years before the story begins. (world.md)
-- Kael is 23 at story start. (characters.md)
-- The siege of Vael happened when Kael was 7. (ch_04)
-- Ch 1-3 span approximately 2 weeks. (outline.md)
--->
 
-## Magic System Rules
-<!-- Example:
-- All magic costs blood or memory. No exceptions. (world.md, HARD RULE)
-- A shaper cannot affect living flesh, only dead matter. (world.md)
-- Using the old tongue draws the attention of the Hollow. (ch_03)
--->
+- 봉인 사건: 약 1,200년 전. (world.md)
+- 신왕 아셀 즉위: 12년 전 (이야기 시작 시점 기준). (characters.md)
+- 의식의 날: 연 1회, 봄 첫 보름달 밤. (world.md)
+- 작품 시작 = 의식의 날 직전. (outline.md)
+- Arc 1 = 1-50회 (의식의 날 + 약 한 달간의 도주). (outline.md)
+- 무한이 50년 전 자흐라 인근까지 갔다 침묵을 택했다. (chars.md)
+- 라이샤르 의식의 날 = 작품 시작 4년 전. 라이샤르 17세, 하셈 13세.
+  (characters.md)
+
+## Magic System Rules (HARD)
+
+- 의식 후 신탁은 변하지 않음. 단 잊힌 신 매개로는 변할 수 있음.
+  (world.md HARD)
+- 신탁 능력은 받은 신 영역에만 작동. (world.md HARD)
+- 0 신탁자는 모든 신성 매개 작동 안 함. 단 태초신 매개는 표식
+  시스템을 우회. (world.md HARD)
+- 같은 신 신탁자 사이엔 본능적 연대·서열. (world.md HARD)
+- 표식은 죽음 직전 흐려지며 이름과 함께 사라진다. (world.md HARD)
+
+## Magic System Rules (SOFT)
+
+- 두 신탁자가 같이 능력 사용 시 약한 공명. 같은 신끼리 더 큼.
+  (world.md)
+- 사막 깊은 곳·강 깊은 곳·옛 폐허에선 도용 신탁이 약해짐. 잊힌 신
+  속삭임이 들리기 쉬움. (world.md)
+- 12 도용 신은 서로 영역 견제. 다른 영역에서 능력 약해짐. (world.md)
 
 ## Character Facts
-<!-- Example:
-- Kael is left-handed. (ch_01)
-- Vessa has a scar across her left palm. (ch_01)
-- Moren cannot read. He hides this. (characters.md)
-- Kael's mother died in the siege of Vael. (characters.md)
--->
+
+- 하셈 = 13세, 외성 샤르 출신 고아, 사회 유일의 0 신탁자, 옛 태초신
+  핏줄 후손. 검은 손바닥 자국 = 옛 핏줄 표식. (characters.md)
+- 하셈 부모 = 5세 때 전염병 사망. 다른 가족 양육 거부. (chars.md)
+- 하셈 양육 = 외성 노파(이름 모름). 의식의 날 직후 사라짐(살해).
+  (characters.md, outline Ch 8-9)
+- 시샤 = 14세, 외성 샤르의 약한 바람 신탁자. 옛 핏줄 흔적자(E층)
+  지만 본인 모름. (characters.md)
+- 시샤 표식 = 손목 안쪽 작은 회색 소용돌이. (characters.md)
+- 라이샤르 = 17세, 신탁 귀족 가문 셋째 아들, 지식 신 강한 신탁자,
+  의식의 날 직후 도주. (characters.md)
+- 라이샤르 표식 = 왼쪽 어깨 푸른 책 모양. (characters.md)
+- 무한 = 60대, 의술 약한 신탁자, 외성 약방 주인, 옛 핏줄 흔적자
+  자각자. 검은 손바닥 자국 보유. (characters.md)
+- 무한 50년 전 자흐라 인근 다녀옴, 침묵 택함. (characters.md)
+- 신왕 아셀 = 35세, 태양 신 라이엔 강한 신탁자, 즉위 12년차.
+  (characters.md)
+- 아셀 13세 의식의 날에 표식이 너무 강해 기절. (characters.md)
+- 추적자 나르 = 사막 신 추적관, 30대, 광신, 가족 중 부적절 신탁자
+  있었음. (characters.md)
+- 추적자 에난 = 강 신 추적관, 40대, 회의자, 5년 전 무고한 처리
+  뒤늦게 알게 됨. (characters.md)
+- 셈한 = 16세, 라이샤르 형, 카드라 가문 차남, 사막 신 강한 신탁자.
+  옛 핏줄 흡수된 길의 거울 인물. (characters.md)
+- 자흐라의 그림자 = 옛 핏줄 후손, 잊힌 신 권능 일부를 사적 도용.
+  주인공의 어둠 거울. (characters.md)
+- 사라이 = 30대 의술 부사제, 자기 신 거짓 의심 시작. (chars.md)
 
 ## Political / Factional
-<!-- Example:
-- The Accord of Tasren was signed by three of the five houses. (world.md)
-- House Drennan controls the salt trade. (world.md)
-- The Temple does not recognize secular law within its walls. (ch_05)
--->
 
-## Cultural
-<!-- Example:
-- In Tasren, the dead are burned, never buried. (world.md)
-- Naming a child before its first moon is considered bad luck. (ch_06)
-- The color white is associated with mourning, not black. (world.md)
--->
+- 신왕 1명 + 신후 11명 = 12 권력자. (world.md)
+- 신왕은 태양 신 라이엔의 강한 신탁자만. (world.md)
+- 신후 = 12신 각자의 영역 통치. 같은 가문 내 순환. (world.md)
+- 신왕 vs 신후 견제 + 신후들 사이 영역 갈등이 정치 동력. (world.md)
+- 12 신탁 귀족 가문. 각 가문은 12신 중 하나와 강한 연결. (world.md)
+- 외부자 군 = A 약한 신탁자 / B 거부 도망자 / C 부적절 신탁자 /
+  D 경계자 / E 옛 핏줄 흔적자. 5층 다층. (world.md)
+- 외방 부족 (이쉬 산맥 너머) = 케르샤 신탁 시스템 미편입.
+  (world.md)
 
-## Established In-Story (things that happened in chapters)
-<!-- Example:
-- Kael killed the messenger in ch_03. This cannot be undone.
-- Vessa revealed her tattoo to Moren in ch_07. He now knows.
-- The bridge at Ashenmoor was destroyed in ch_09. It's gone.
--->
+## Cultural / Procedural
+
+- 의식의 날 = 봄 첫 보름달 밤, 광장에서 12 동심원으로 청소년 정렬.
+  (world.md)
+- 표식 노출 의무 = 의례·관청·결혼 등 공적 영역. 평소엔 옷으로 가능.
+  (world.md)
+- 이름 = 가문명 + 신탁명 + 본명. 0 신탁자는 신탁명 없음. (world.md)
+- 0 신탁자 의복 = 검은색 (사회적 사망의 표지). (world.md)
+- 죽음의 의례 = 가족이 이름을 큰 소리로 불러 표식 보존 시도.
+  (world.md)
+- 이름 없는 노래 = 외방·사막 부족의 가사 없는 자장가. 도성 금지.
+  (world.md)
+- 검은 손바닥 자국 = 옛 핏줄 흔적, 어렸을 때 박힘, 보통 사라짐.
+  안 사라지면 박해 대상. (world.md)
+
+## Established In-Story (Arc 1 cycle 1 의 설정 — drafting 진입 후 갱신)
+
+- 작품 시작일 = 의식의 날 (회 1).
+- 회 1: 하셈이 외성에서 도성으로 이동. 노파가 손바닥 천을 다시 묶음.
+- 회 2: 마지막 신까지 호명 후 표식 안 새겨짐. 광장 침묵.
+- 회 3: 신왕 아셀의 명령 = "처리하라."
+- 회 4: 하셈이 잊힌 신의 첫 속삭임 ("들리는가?") 들음.
+- 회 5: 노파가 자기 흐릿한 풍요 표식을 처음 보여줌.
+- 회 6: 무한 약방. 무한이 손바닥 자국 보여줌.
+- 회 7: 추적자 나르 약방 등장.
+- 회 8: 노파가 "약속" 의 존재 처음 언급 — 받은 자 모름.
+- 회 9: 노파 사망. 시신의 표식 완전히 흐려짐.
+- 회 10: 시샤가 하셈을 처음 숨겨줌.
+- 회 26: 라이샤르 가문 도서관에서 봉인 회의록 두루마리 발견.
+- 회 30: 무한이 손바닥을 하셈에게 겹침. 하셈이 봉인의 밤 환영.
+- 회 40: 약방 화재. 무한 행방 불명 (사망은 Arc 2 확인).
+- 회 45: 하셈의 첫 신성 매개 작동 (외성 외곽 모래 위 빛 흔적).
+- 회 50: 셈한이 동생 살리기 결단. 하셈이 자기 손바닥 자국 = 표식
+  자각. Lie "내가 부족해서" 첫 균열.
+
+## Internal Consistency Constraints
+
+1. 0 신탁자는 하셈 1명 (1,200년 만의 단일 사례). 다른 인물의 "선택
+   받지 못한 자" 묘사 = 약한 신탁자(A) 또는 거부자(B). (world.md)
+2. 잊힌 신 직접 감응 = 0 신탁자만. 옛 핏줄 흔적자(E) 는 본능적
+   의심·꿈만, 직접 음 못 들음. (world.md)
+3. 신왕은 태양 신 강한 신탁자. 표식 강도 상위 1% 이내. (world.md)
+4. 결말의 "신 없는 세계" = 12 도용 신 + 잊힌 태초신 모두 사라짐.
+   어떤 신탁도 작동 안 함. (world.md)
+5. 잊힌 신 봉인 = 자흐라 가장 깊은 곳. 0 신탁자가 도달해야 풀림.
+   (world.md)
+6. 의식의 날 = 작품 시작. Arc 1 의 1-3회. (outline.md)
+7. 잊힌 신의 호명 = 작중 절대 이름으로 부르지 않음. "그분", "이름
+   없는 분", "잊힌 분", "처음의 분", "옛 분" 으로만. (world.md)
+8. 잊힌 신은 거짓말하지 않음. 단 모든 진실을 한 번에 주지도 않음.
+   (characters.md)
+9. 회차 호흡 — 한 회 5,000-5,200자, 회당 진전 1-2개 + cliffhanger
+   1개. (voice.md)
+10. 시점 교체는 5-10회마다 1회. 회차 첫머리에 시점 인물 명시.
+    (voice.md)
