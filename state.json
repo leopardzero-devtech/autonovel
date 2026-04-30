@@ -4,8 +4,9 @@
   "title": "사막의 무명신",
   "language": "ko",
   "format": "korean_web_novel",
-  "current_focus": "phase 1 cycle 1 baseline (Arc 1 정밀 spec 포함)",
+  "current_focus": "phase 1 cycle 1 baseline + spec 정리·인덱스·status (drafting 진입 전)",
   "iteration": 1,
+  "last_updated": "2026-04-30",
   "foundation_score": 7.6,
   "lore_score": 8.4,
   "chapters_drafted": 0,
@@ -85,6 +86,9 @@
     }
   ],
   "files": {
+    "entry_point": "NOVEL-INDEX.md",
+    "status": "STATUS.md",
+    "glossary": "GLOSSARY.md",
     "seed": "seed.txt",
     "world": "world.md",
     "characters": "characters.md",
@@ -93,5 +97,6 @@
     "canon": "canon.md",
     "mystery_author_only": "MYSTERY.md",
     "anti_slop_ko": "ANTI-SLOP-KO.md"
-  }
+  },
+  "next_recommended_step": "옵션 A. voice calibration — 회 1·회 4·회 50 시필 작성 → ANTI-SLOP-KO 임계 조정 → voice.md 보강. STATUS.md 의 옵션 A 참조."
 }
