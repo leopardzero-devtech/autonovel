@@ -4,9 +4,9 @@
   "title": "사막의 무명신",
   "language": "ko",
   "format": "korean_web_novel",
-  "current_focus": "phase 1 cycle 1 baseline + spec 정리·인덱스·status (drafting 진입 전)",
-  "iteration": 1,
-  "last_updated": "2026-04-30",
+  "current_focus": "phase 1 cycle 2 — 외부 검토 반영 spec 갱신 (시각 아우라·모래 제약·셈한 정보망·비극 감축·속삭임 비용)",
+  "iteration": 2,
+  "last_updated": "2026-05-01",
   "foundation_score": 7.6,
   "lore_score": 8.4,
   "chapters_drafted": 0,
@@ -40,7 +40,7 @@
   "debts": [
     {
       "type": "voice_korean_webnovel",
-      "note": "voice.md Part 2 가 캐릭터별 voice 차별화와 회차 호흡 룰을 명세했지만 실제 시필(exemplar) 은 5개로 영문 단권 기준에 가까움. 한국 웹소설 회당 5,000-5,200자 호흡의 시필이 아직 없음. drafting 진입 전 회 1·회 4·회 50 의 시필 필요."
+      "note": "voice.md Part 2 가 캐릭터별 voice 차별화와 회차 호흡 룰을 명세했지만 실제 시필(exemplar) 은 5개로 영문 단권 기준에 가까움. 한국 웹소설 회당 5,000-5,200자 호흡의 시필이 아직 없음. drafting 진입 전 회 1·회 4·회 50 의 시필 필요. **외부 검토 반영 추가**: 시점 거리감 충돌 (mythic 결 vs 정주행 호흡) 을 시필로 실증해 색·아우라 묘사 가이드의 임계 조정 필요."
     },
     {
       "type": "anti_slop_ko_validation",
@@ -48,7 +48,7 @@
     },
     {
       "type": "minor_chars",
-      "note": "Arc 2-4 의 핵심 인물 (외방 부족 지도자, 의술 신후, 신왕의 측근, 자흐라 그림자의 구체 외형 등) 이 placeholder. Arc 2 spec 작성 시 expand."
+      "note": "Arc 2-4 의 핵심 인물 (외방 부족 지도자, 의술 신후, 신왕의 측근, 자흐라 그림자의 구체 외형 등) 이 placeholder. Arc 2 spec 작성 시 expand. **외부 검토 반영 추가**: 회 51-65 사막 횡단 15화의 장면 단위 사건 밀도가 Arc 2 의 가장 큰 약점 — 외성→자흐라 직선 이동 + 외방 부족 신앙 설명만으로는 정주행 동력 누수. Arc 2 spec 작성 시 회당 사건 1-2개 + 인물 충돌 보장 필요."
     },
     {
       "type": "world_geography_arc1",
@@ -57,6 +57,10 @@
     {
       "type": "antagonist_balance",
       "note": "신왕 아셀이 Arc 3-4 의 정점 적인데 Arc 1 에선 회 3 잠시 등장 후 부재. 그의 Arc 2 잠복 묘사·Arc 3 등장의 동선이 outline 거시에서만 다뤄짐. Arc 2 spec 시 정밀화 필요."
+    },
+    {
+      "type": "color_system_calibration",
+      "note": "world.md 12 도용 신 색표가 가안. canon.md 색표와 일관되나 voice 시필 작성 시 자연어 묘사로 옮기기 어려운 색이 있을 수 있음 (예: 태양 금 vs 곡식 황갈 구별). 첫 5회 시필 후 조정 가능성. 잊힌 신의 '이름이 없는 색' 묘사 일관성도 시필로 검증."
     }
   ],
   "evaluation_log": [
@@ -83,6 +87,30 @@
         "잊힌 신의 속삭임 형식(들여쓰기·인용)을 시각적으로 어떻게 회차 안에 배치할지 voice.md 에 명시."
       ],
       "decision": "keep — foundation_score 7.6 이 임계 7.5 통과. lore 9.0 으로 매우 강함. voice 한국 웹소설 specificity 가 약점이지만 drafting 진입 전 시필로 보강 가능."
+    },
+    {
+      "iteration": 2,
+      "date": "2026-05-01",
+      "type": "external_review_reflection",
+      "review_summary": "외부 검토자 첫 인상 7/10. mythic 결 + 한국 웹소설 결합 절반 작동·절반 위험. Red Flag: (1) 회 1-50 주인공 무력함 — 회 1-5 고유 시그널 부재. (2) 4-5중 비극 인플레이션. 위험 지점: 회 51-65 사막 횡단 사건 밀도, 회 4-50 추적자 단조로움(나르 1축).",
+      "actions_taken": [
+        "처방 1 (시각 아우라 시스템): world.md 색 시스템 + 12 색표 + 잊힌 신 '이름이 없는 색' 추가. characters.md 하셈 단독 능력 4종 (아우라 시각·결의 어긋남 감지·옛 색 잔향·죽음의 흐려짐) 추가. 시샤·라이샤르·무한·셈한·노파·에난·사라이·나르 각자 색·잔향 명시. canon.md hard fact 갱신. outline.md 회 1-50 시각 시그널 비트 추가.",
+        "처방 2 (추적 압력 다양화 A+B): A — 사막 신탁의 모래 환경 의존 hard rule 추가 (world.md). 나르의 능력 강도 조건부화 (모래 8 / 도성·외성 5). B — 셈한 가문 정보망 회 16~ 가동, 회 49 정면 등장 시 자백. F-24 신규 plant.",
+        "처방 3 (비극 인플레이션 감축 α+β + 셈한 생존): outline.md Arc 3 클라 멘토 사망 제거. 에난·사라이·셈한 셋 다 Arc 4 생존 명시 (셈한이 새 사회 첫 시민으로). characters.md 운명 갱신. Arc 4 하셈 흐려짐을 '잊혀가는 길' 이 아닌 '표식 시스템 종료의 시각적 증거' 로 톤 전환.",
+        "처방 4 (속삭임 비용): world.md + characters.md + canon.md 에 시각 비용 (단기, 24시간) + 기억 비용 (영구) 추가. F-23 신규 plant — 회 4 첫 속삭임 → 회 9 부모 얼굴 흐려짐 자각 → Arc 4 자기 자신 흐려짐.",
+        "voice.md Part 2 색·아우라 묘사 가이드 추가 (보석 비유 5회 이하·인공 색명 금지·자연물 결합·시점 거리감 룰).",
+        "신규 plant: F-21~F-25 (단독 시각 능력·결의 어긋남·속삭임 비용·셈한 정보망·모래 환경 의존)."
+      ],
+      "files_changed": [
+        "world.md",
+        "canon.md",
+        "characters.md",
+        "outline.md",
+        "voice.md",
+        "STATUS.md",
+        "state.json"
+      ],
+      "decision": "keep — 검토 처방 1·2·3·4 모두 spec 에 반영. drafting 진입 전 voice 시필로 색 묘사 가이드 실증 단계 진입 권장."
     }
   ],
   "files": {
