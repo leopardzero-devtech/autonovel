@@ -4,13 +4,13 @@
   "title": "사막의 무명신",
   "language": "ko",
   "format": "korean_web_novel",
-  "current_focus": "phase 1 cycle 4 — 외부 검토 Red Flag 1·2 처방. 회 1 in medias res + E층 잔향 인플레 감축 (시샤 A층 명확화)",
-  "iteration": 4,
-  "last_updated": "2026-05-02",
-  "foundation_score": 7.6,
+  "current_focus": "phase 1 cycle 5 — 외부 검토 Red Flag (Arc 4 압축·회 1-10 power 발화·시놉 후크) 처방. Arc 4 30→50화 확장, 회 7-8 잊힌 신 첫 사회적 power, F-22 회 1·회 2 분리, 외부 공유용 후크 시놉 추가",
+  "iteration": 5,
+  "last_updated": "2026-05-03",
+  "foundation_score": 7.7,
   "lore_score": 8.4,
   "chapters_drafted": 0,
-  "chapters_total": 200,
+  "chapters_total": 220,
   "chapters_planned_arc1": 50,
   "novel_score": 0.0,
   "weakest_dimension": "voice_korean_webnovel_specificity",
@@ -32,9 +32,9 @@
       "macro": "신들의 질서와의 전쟁"
     },
     "arc4": {
-      "range": "171-200+",
+      "range": "171-220",
       "status": "macro_only",
-      "macro": "파멸과 작별"
+      "macro": "파멸과 작별 (Red Flag 1 반영으로 30화 → 50화 확장)"
     }
   },
   "debts": [
@@ -160,6 +160,30 @@
         "state.json"
       ],
       "decision": "keep — Red Flag 1·2 모두 spec 에 반영. 회 1 의 첫 페이지 후크 + 주인공 단독성 보존이 동시에 강화됨. 다음 권장 = voice 시필 (회 1 in medias res 호흡, 회 9 시샤 잔향 없음 대비, 회 50 클라) 로 실증."
+    },
+    {
+      "iteration": 5,
+      "date": "2026-05-03",
+      "type": "external_review_arc4_pacing_power_hook_reflection",
+      "review_summary": "외부 검토 6.5/10. Red Flag (1) Arc 4 30화 압축 폭발 — 9 신 + 신왕 + 작별을 한 신당 3.3화로 처리. (2) 회 1-10 사건 규모가 한국 웹소설 호흡으로 너무 작음 — 첫 power 발화가 회 45 매개. 부수 (3) 1줄 시놉 후크 약함 — '신왕 즉시 처리 명령' 끌어올리면 7.5. (4) 회 1 plant 과부하 (F-21 + F-22 동시 발화).",
+      "actions_taken": [
+        "Red Flag 1 (Arc 4 압축) — outline.md Arc 4 거시 비트 30화 → 50화 확장 (회 171-220). 9 신 분배: 사막·풍요·곡식·달 빠르게 (회 171-180, 10화), 죽음·지식 자발 반환 모델 + 신왕 첫 직접 대면 (회 181-190, 10화), 전쟁·심판·태양 깊고 길게 (회 191-205, 15화), 잊힌 신 작별 7화 (회 206-212), 신 없는 세계 첫날·새 사회 기초 8화 (회 213-220). 마지막 회 = 회 220.",
+        "Red Flag 2 (회 1-10 power 발화 늦음) — outline.md 회 7 끝에 잊힌 신의 첫 사회적 power 발화 추가: 노파 사라짐 직후 외성 노인이 노파 진짜 이름 짧게 떠올렸다 다시 잊음, 노파 옆 이름 없는 색 잔향 또렷해짐. 한국 웹소설 정주행 결의 가시 power + mythic 결의 정서 둘 다 살림. F-26 신규 (Arc 4 회 174-176 풍요 신 파멸 시 노인이 노파 이름 완전 회복으로 수확).",
+        "Red Flag 2 추가 — 회 8 사라이 첫 등장. 노파 시신 검진 시 그녀의 백연자 표식이 시신 옆에서 짧게 흐려졌다 돌아옴. 본인 인지 못 함, 하셈만 봄. 의술 신탁이 잊힌 신 권능 회수 인근에서 가장 먼저 흔들리는 시각 plant. F-27 신규 (Arc 2 회 81-95 사라이 전향 + Arc 3 회 131-150 의술 신 첫 파멸의 시각 plant).",
+        "Red Flag 4 (회 1 plant 과부하) — F-22 를 F-22a (회 1 12 색 솟음·신왕 금빛 압도감, 위화감만) + F-22b (회 2 결의 어긋남 자각, 회 50·Arc 4 회 201-205 도용 자각의 plant) 로 분리. 회 1 회상 3 의 결의 어긋남 자각 톤을 위화감으로 약화, 회 2 격리 방에서 본격 자각으로 정착.",
+        "Red Flag 3 (시놉 후크 약함) — NOVEL-INDEX.md 작품 요약 1줄 아래에 외부 공유용 후크 시놉 1줄 추가 ('1,200년 만에 표식 없는 자가 광장에 섰다. 신왕은 그날로 처리 명령을 내렸고, 외성의 노파는 그날 밤 사라졌다. 그러나 그의 귀에는 봉인된 옛 신의 속삭임이 들렸다 — 「기억하라」.'). seed.txt 의 사용자 원본 시놉 (문학적 결) 은 그대로 보존, 외부 공유 단계에서만 사용. 결말 비공개 룰 유지.",
+        "메타 갱신: NOVEL-INDEX.md 분량 200화+ → 220화+, seed.txt 분량 row 동일 갱신, state.json chapters_total 200 → 220, arc4.range 171-200+ → 171-220. characters.md 사라이 entry 에 회 8 plant 명시 + Arc 4 회 196-200 새 법 모델 제안 명시.",
+        "푸시백 항목 (변경 안 함): (a) '회 50 클라 분노 폭발 한 번' — 인물의 침묵 결 보호. 회 41-43 에 이미 첫 진짜 분노 비트 있음. 회 50 자각이 mythic 결의 폭발 자체. (b) Arc 2 자흐라 60화 sweep — 이미 D3 디버트 등록됨, Arc 2 spec 작성 시 처리. (c) voice mythic 5,000자 부담 — 이미 D1 디버트 등록됨, voice calibration 단계에서 처리. (d) 결말 reveal 정서적 폭발력 — voice 의 일이라 spec 단계 추가 손질 불필요."
+      ],
+      "files_changed": [
+        "outline.md",
+        "characters.md",
+        "NOVEL-INDEX.md",
+        "seed.txt",
+        "STATUS.md",
+        "state.json"
+      ],
+      "decision": "keep — Red Flag 1·2·4 spec 에 반영, Red Flag 3 외부 공유 후크로 분리 처방. 작품 분량 200화+ → 220화+ (Arc 4 정직한 호흡 확보). 다음 권장 = voice 시필 (회 1 in medias res, 회 7 잊힌 신 첫 사회적 power, 회 50 도용 자각 클라) 로 실증."
     }
   ],
   "files": {
