@@ -4,8 +4,8 @@
   "title": "사막의 무명신",
   "language": "ko",
   "format": "korean_web_novel",
-  "current_focus": "phase 1 cycle 6 — voice 시필 3편 작성 완료 (회 1 in medias res / 회 7 잊힌 신 첫 사회적 power / 회 50 도용 자각). D1 숙제(한국 웹소설 호흡 시필 미작성) 해소. 다음 = 시필 품질 점검(reader 패널) 또는 본 작업 진입",
-  "iteration": 6,
+  "current_focus": "phase 1 cycle 7 — reader 패널 4-페르소나 평가 후 회 1·7·50 부분 수정 + 시샤 voice 시필 (회 9) 추가 + voice.md Part 2 exemplar 보강 + ANTI-SLOP-KO Tier 7-5 시그니처어 임계 실측 갱신. D1 숙제 검증 완료. D2 (ANTI-SLOP-KO 임계 추측치) 부분 해소. 다음 = writing-plans 진입 (Arc 1 implementation plan)",
+  "iteration": 7,
   "last_updated": "2026-05-03",
   "foundation_score": 7.7,
   "lore_score": 8.4,
@@ -40,7 +40,7 @@
   "debts": [
     {
       "type": "anti_slop_ko_validation",
-      "note": "ANTI-SLOP-KO.md 가 새 사전이라 통계 임계가 추측치. 첫 5-10회 작성 후 실제 빈도와 비교해 임계 조정 필요."
+      "note": "cycle 7 부분 해소 — voice 시필 4편 (회 1·7·9·50) 실측 기반 시그니처어 임계 8개 (한 호흡 12 / 잔향 10 / 한 단계 5 / 결 30 / 안개 10 / 답하지 않는 것이 답이었다 1 등) ANTI-SLOP-KO.md Tier 7-5 보강 섹션에 추가. 작품 누적(220화) 통제 룰 추가. 미해소 — 일반 Tier 1·4·5·6 임계는 여전히 추측치, drafting 5-10회 후 재측정 필요."
     },
     {
       "type": "minor_chars",
@@ -201,6 +201,38 @@
         "state.json"
       ],
       "decision": "keep — D1 숙제 해소. 시필 3편이 voice.md Part 2 의 가설을 5,000-5,200자 호흡에서 실증. 다음 권장 = (a) reader 패널 4-페르소나 평가로 약점 도출, 또는 (b) 본 작업 진입 (회 1 부터 정식 drafting)."
+    },
+    {
+      "iteration": 7,
+      "date": "2026-05-03",
+      "type": "reader_panel_evaluation_and_revision",
+      "summary": "4-페르소나 reader 패널 (편집자·장르독자·작가·첫독자) 병렬 서브에이전트 평가. 합의 항목(3/4 이상) 추출 → 회 1·7·50 부분 수정 적용 + 시샤 voice 시필 추가 + voice.md exemplar 보강 + ANTI-SLOP-KO 시그니처어 임계 실측 갱신.",
+      "panel_consensus": {
+        "4/4_best": "회 7 line 195-219 노인 잊힘 단락 — mythic 결과 정주행 결이 합쳐진 본보기 (편 best_scene + 장 emotional_hit/haunts_you + 작 strongest_craft_moment + 첫 memorable_image). voice.md Part 2 Exemplar 6 으로 인용 등재.",
+        "4/4_problem": "회 50 line 167-257 자각 단락 OVER-EXPLAIN + REDUNDANT 누적 — 잊힌 신 4 turn / 화자 명제 정리어 3문장 / 회상 4단 묶음 / 매듭 비유. 70% 압축 필요.",
+        "4/4_drafting_ready_conditional": "시필 3편 cliffhanger 통과, drafting 진입 가능. 부분 수정 후 진입 권고. 재시필 불필요.",
+        "3/4_signature_phrase_overuse": "한 호흡 / 잔향 / 답하지 않는 것이 답이었다 / 결·아우라 어휘 누적 피로 — 회당 cap + 220화 누적 통제 필요.",
+        "3/4_chapter_1_hook": "회 1 첫 1,000자 안에 즉각 위협 한 줄 추가 + 12 색 나열·새벽 골목 다섯 골목 묘사 호흡 정리."
+      },
+      "actions_taken": [
+        "회 1 부분 수정: (a) 광장 침묵 직후 신왕궁 발코니 진한 금 결 한 호흡 한 단락 추가 (즉각 위협 첫 1,000자 안에 박힘). (b) line 71-75 외성 사람 둘 안개 묘사 컷 (REDUNDANT). (c) line 84-88 자기에게만 보임 4-5회 재진술 → 2문장 압축.",
+        "회 7 부분 수정: (a) line 36-41 메타 해설 단락 컷 (OVER-EXPLAIN — 화자가 잔향 메커니즘 설명). (b) line 189-194 외성 사람 사회학 주석 한 문장 컷.",
+        "회 50 자각 단락 70% 압축: (a) line 167-172 시샤 동맹 라벨 마지막 절 컷. (b) line 75 셈한 antithesis '명을 듣는 것과 명을 따르는 것' 컷 (회차 안 antithesis 누적 회피). (c) line 192 triadic '한 호흡 두 호흡 세 호흡' 압축. (d) line 196-214 잊힌 신 4 turn → 2 turn 압축. (e) line 218-257 자각 회상 4단 + 화자 명제 정리어 + 매듭 비유 + 평생 어른 결 회상 모두 컷, '도용. 한 단어였다.' 한 단어로 자각 흡수 + '나는 처음의 신의 신탁자다 / 내가 부족해서가 아니었다' 침묵 결단 형태로 재구성.",
+        "chapters/ch_09_sisha_voice.md (신규, 약 2,260자) — 회 9 시샤 첫 등장 단편 시필. 외성 구어·욕설·도덕 회색·잔향 없음 시각 시그널 검증. F-13 plant 거울 (흔적 없는 동맹) 의 voice 작동. 작가 panel thinnest_character 우려 해소.",
+        "voice.md Part 2 exemplar 섹션 보강: Exemplar 6 (회 7 노인 잊힘 단락, 4/4 best 표시) + Exemplar 7 (회 50 압축 후 자각 폭발) + Exemplar 8 (시샤 시필 reference).",
+        "ANTI-SLOP-KO.md Tier 7-5 보강 섹션 추가: voice 시그니처어 8개 (한 호흡 12 / 잔향 10 / 한 단계 5 / 결 30 / 안개 10 / 답하지 않는 것이 답이었다 1 등) 회당 cap + cycle 7 실측 (회 1/7/9/50) 표 + 220화 누적 통제 룰 + 어휘 풀 다양화 룰. D2 디버트 부분 해소."
+      ],
+      "files_changed": [
+        "chapters/ch_01_voice_calibration.md",
+        "chapters/ch_07_voice_calibration.md",
+        "chapters/ch_50_voice_calibration.md",
+        "chapters/ch_09_sisha_voice.md (신규)",
+        "voice.md",
+        "ANTI-SLOP-KO.md",
+        "STATUS.md",
+        "state.json"
+      ],
+      "decision": "keep — reader 패널 4/4 합의 best 단락 1개 (회 7 노인 잊힘) 보존, 4/4 합의 결함 항목 (회 50 자각 단락) 70% 압축 적용, 3/4 합의 항목 (시그니처어 빈도 / 회 1 첫 페이지) 모두 반영. 시샤 voice 검증 단편 추가로 11명 인물 voice 검증 명단에 시샤 추가. 다음 권장 = writing-plans skill 호출 → Arc 1 (1-50회) implementation plan 작성."
     }
   ],
   "files": {
@@ -216,5 +248,5 @@
     "mystery_author_only": "MYSTERY.md",
     "anti_slop_ko": "ANTI-SLOP-KO.md"
   },
-  "next_recommended_step": "voice 시필 3편 완성. 다음 = (a) reader 패널 4-페르소나 평가 또는 (b) 본 작업 진입 (회 1 부터 정식 drafting). STATUS.md 참조."
+  "next_recommended_step": "cycle 7 완료 — reader 패널 평가 + 합의 항목 반영 + 시샤 voice 시필 추가. 다음 = writing-plans skill 호출 → Arc 1 (1-50회) implementation plan 작성. plan 의 Step 1 reference 로 cycle 7 시필 4편 (회 1·7·9·50) + voice.md Part 2 Exemplar 6·7·8 사용."
 }

@@ -11,15 +11,37 @@
 ## 현재 위치
 
 **Branch**: `autonovel/nameless-god`
-**Phase**: foundation (Phase 1 cycle 6 — voice 시필 3편 완성, D1 숙제 해소)
-**Iteration**: 6
+**Phase**: foundation (Phase 1 cycle 7 — reader 패널 평가 + 부분 수정 + 시샤 시필 추가, D2 부분 해소)
+**Iteration**: 7
 **Foundation score**: 7.7 / 임계 7.5 통과
 **Lore score**: 9.0 / 임계 7.0 통과
 **Decision**: keep
 **작품 분량**: 220화+
-**시필 작성**: 회 1 / 회 7 / 회 50 — `chapters/` 3편 (5,024 / 5,147 / 5,081자)
+**시필 작성**: 회 1 / 회 7 / 회 9 시샤 / 회 50 — `chapters/` 4편 (수정 후 5,084 / 5,015 / 2,260 / 4,109자, 회 50 은 자각 단락 70% 압축으로 의도적 짧음)
 
-마지막 작업: 2026-05-03 — voice 시필 3편 작성 (cycle 6).
+마지막 작업: 2026-05-03 — reader 패널 4-페르소나 평가 + 합의 반영 (cycle 7).
+4-페르소나 reader 패널 (편집자·장르독자·작가·첫독자) 병렬 서브에이
+전트 평가 → 합의 항목 추출 + 회차별 액션 분류 + 적용. **4/4 합의
+best**: 회 7 line 195-219 노인 잊힘 단락 (mythic + 정주행 결 합쳐
+짐) — voice.md Part 2 Exemplar 6 으로 등재. **4/4 합의 결함**: 회 50
+line 167-257 자각 단락 OVER-EXPLAIN + REDUNDANT 누적 — 70% 압축 적용
+(잊힌 신 4 turn → 2 turn / 회상 4단 + 명제 정리어 + 매듭 비유 컷 /
+'도용. 한 단어였다.' 한 단어로 자각 흡수). **3/4 합의**: 시그니처어
+빈도 통제 + 회 1 첫 페이지 즉각 위협 보강. 부분 수정 적용 (회 1 = 발
+코니 위협 한 단락 추가 + 외성 사람 둘 컷 + 자기에게만 보임 재진술
+압축 / 회 7 = 메타 해설 컷 + 사회학 주석 컷 / 회 50 = 자각 단락 70%
+압축).
+신규 산출물: `chapters/ch_09_sisha_voice.md` (~2,260자) — 시샤 첫 등
+장 단편 시필. 외성 구어·욕설·도덕 회색·잔향 없음 시각 시그널 검증.
+voice.md Part 2 Exemplar 6·7·8 추가 (회 7 노인 잊힘 4/4 best / 회 50
+압축 자각 / 시샤 시필 reference).
+ANTI-SLOP-KO.md Tier 7-5 보강 섹션 추가 — 시그니처어 8개 (한 호흡 12
+/ 잔향 10 / 한 단계 5 / 결 30 / 안개 10 / 답하지 않는 것이 답이었다 1)
+회당 cap + cycle 7 실측 표 + 220화 누적 통제 룰. D2 디버트 부분 해소.
+다음 = writing-plans skill 호출 → Arc 1 implementation plan 작성. plan
+Step 1 reference 로 cycle 7 시필 4편 + voice.md Exemplar 6·7·8 사용.
+
+이전 작업: 2026-05-03 — voice 시필 3편 작성 (cycle 6).
 회 1 (5,024자) — in medias res 호흡. 의식의 끝 침묵으로 시작, 새벽·
 도성 길·12 사제 호명 회상, 다시 침묵, 광장 끌어냄, 신전 격리,
 신왕 진한 금빛 도착, 노파 풍요 결 흐려짐 (cliffhanger). plant:
@@ -216,17 +238,16 @@ Red Flag 2개·위험 지점 3개에 대한 처방을 모두 spec 에 반영:
 
 ## 미완 디버트 (state.json.debts)
 
-### ~~D1. voice 한국 웹소설 specificity~~ — **해소 (2026-05-03, cycle 6)**
-- 회 1 / 회 7 / 회 50 시필 3편 작성 완료 (`chapters/ch_*_voice_calibration.md`).
-- mythic 거리감 + 정주행 사건 호흡 양립 검증. 색·아우라 가이드 작동.
-- 인물별 voice 차별화 검증. 시각 cliffhanger 3편 모두.
-- ANTI-SLOP-KO Tier 1·2·3·4·6 깨끗. Tier 5 강조부사 회당 1회 (룰 안).
+### ~~D1. voice 한국 웹소설 specificity~~ — **해소 (2026-05-03, cycle 6, cycle 7 검증)**
+- 회 1 / 회 7 / 회 50 시필 3편 작성 완료 + cycle 7 reader 패널 4/4 합의로 voice 통과 검증.
+- 회 9 시샤 시필 추가로 11명 인물 중 voice 검증 명단에 시샤 추가.
+- 회 7 노인 잊힘 단락 = 4/4 합의 best (voice.md Exemplar 6 등재).
 
-### D2. ANTI-SLOP-KO 임계 추측치
-- 문제: ANTI-SLOP-KO.md 의 회당 빈도 임계가 실증 없이 추측.
-- 영향: 너무 엄격하면 멀쩡한 표현 다 슬롭으로 분류, 너무 느슨하면 슬롭
-  안 잡힘.
-- 해결: 첫 5-10회 작성 후 실제 빈도 측정 → 임계 조정.
+### ~~D2. ANTI-SLOP-KO 임계 추측치~~ — **부분 해소 (2026-05-03, cycle 7)**
+- cycle 7 voice 시필 4편 (회 1·7·9·50) 실측 기반 시그니처어 8개 임계 ANTI-SLOP-KO.md Tier 7-5 보강 섹션에 추가.
+  - 한 호흡 cap 12, 잔향 cap 10, 한 단계 cap 5, 결 cap 30, 안개 cap 10, 답하지 않는 것이 답이었다 cap 1.
+  - 220화 누적 통제 룰 + 어휘 풀 다양화 룰 추가.
+- 미해소 — 일반 Tier 1·4·5·6 의 임계는 여전히 추측치. drafting 5-10회 실측 후 재조정 필요.
 
 ### D3. Arc 2-4 보조 인물 placeholder
 - 문제: 외방 부족 지도자, 의술 신후, 신왕 측근, 자흐라 그림자의 외형
@@ -283,41 +304,34 @@ Red Flag 2개·위험 지점 3개에 대한 처방을 모두 spec 에 반영:
 
 ## 다음 가능한 스텝
 
-### 옵션 A. voice calibration (권장)
-- 회 1·회 4·회 50 의 voice 시필을 한국 웹소설 회당 분량(5,000-5,200자)
-  으로 1편씩 작성
-- 작성 후 ANTI-SLOP-KO 룰로 검진 → 실제 빈도 측정 → 임계 조정
-- voice.md 의 시필 섹션을 작성된 시필의 강한 단락으로 보강
-- D1, D2 디버트 동시 해결
-- 소요: 시필 3편 + 평가 + 조정 = 한 세션 전부
+### 옵션 A. writing-plans 진입 (권장)
+- `superpowers:writing-plans` skill 호출
+- Arc 1 (1-50회) implementation plan 작성
+- plan Step 1 reference: cycle 7 시필 4편 (회 1·7·9·50) + voice.md Part 2
+  Exemplar 6·7·8
+- 시필 + Exemplar 가 voice baseline 으로 박혀 있어 plan 이 가벼움
+- 소요: plan 작성 (한 세션)
 
-### 옵션 B. 추가 spec 정리
-- 시간선 통합 (canon.md timeline 보강)
-- outline.md 회차 비트 형식 표준화 (POV / 등장 인물 / 사건 / cliffhanger
-  네 항목으로 통일)
-- 도성 내부 동선 sketch (D4 부분 해결)
+### 옵션 B. 추가 spec 정리 (잔여 디버트)
+- D4 도성 내부 동선 sketch (12 신전 광장·신왕궁·도서관)
+- D5 신왕 아셀 Arc 2 잠복 묘사 정밀화
+- D6 카드라 가문 구조 (라이샤르 vs 셈한)
+- D7 색 시스템 calibration — 시필 4편 자연어 묘사 vs 색표 대조
 - 소요: 짧음, 한 세션의 1/3
 
-### 옵션 C. brainstorming → writing-plans 진입
-- 현재 spec 으로 writing-plans skill 호출
-- Arc 1 (1-50회) 의 implementation plan 작성
-- voice calibration 단계를 plan 의 Step 1 로 박음
-- 그 후 본격 drafting 진입
-- 소요: plan 작성 + 첫 회차 작성 시작
-
-### 옵션 D. spec 의 일부 항목 변경
+### 옵션 C. spec 일부 변경
 - 사용자가 검토 중 바꾸고 싶은 항목 지적 → 수정 → 재평가
-- 예: 인물 추가·결말 변경·정치 구조 수정·voice 톤 미세 조정 등
 
 ---
 
 ## 권장 다음 스텝
 
-**A → C** 순서. voice calibration 으로 D1·D2 해결한 다음 writing-plans
-진입. 이렇게 가면 plan 의 Step 1 이 이미 끝난 상태로 진입하니 plan 이
-더 가벼워짐.
+**옵션 A**. cycle 7 로 voice baseline 검증·정착 끝. writing-plans 진입
+하면 plan Step 1 이 이미 끝난 상태로 시작 → plan 자체가 회차 단위
+drafting 순서·평가 체크포인트·반복 룰 결정에 집중 가능.
 
-만약 사용자가 spec 추가 변경을 원하면 D 가 우선.
+옵션 B 잔여 디버트는 Arc 2 spec 작성 단계 (Arc 1 drafting 끝난 후)
+에서 일괄 처리해도 무방. 옵션 A 권장.
 
 ---
 
