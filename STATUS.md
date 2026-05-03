@@ -45,14 +45,23 @@ spec 대조 후 4개 적용·3개 푸시백·1개 보류.
   삭임 시점. 변경 불필요.
 - 회 5 micro-사이다 0.5컷 — 회 5 동선상 사제 끌고 가는 장면 없음
   + 회 7 첫 사회적 power 발화 무게 보존. 거절.
-**보류 (1개)**:
-- 회 1 voice close 톤 한 단계 — cycle 7 reader 패널이 회 1 voice
-  4/4 통과시킴. 시장 관점 단일 의견으로 panel 결정 재변경하는 것
-  의 trade-off 가 큼. 사용자 결정 보류.
+**보류 (1개) → 해소 (사용자 결정, 같은 날)**:
+- 회 1 voice close 톤 한 단계 — 사용자가 옵션 3 (두 버전 비교) 후
+  B (close 톤) 채택. ch_01 시필 첫 1,000자 (광장 장면) 를 mythic
+  관조형 → 하셈 신체 감각 close 톤으로 교체. 추가 컷: 숨 멈춤,
+  손바닥 천의 땀, 햇빛 정수리 무게, 옆 청소년 안도의 숨, 자기 손
+  떨림 자각. 시각 plant (12 색 결, 단독 시각 능력, 손바닥 자국,
+  광장 침묵, 발코니 진한 금) 모두 보존. F-01 (손바닥 검은 자국)
+  의 첫 노출은 광장 → 새벽 회상 (line 53-57) 으로 자연 이동
+  ("보고 싶었다 / 그러면 안 됐다" 가 1차 plant, 회상에서 본격
+  노출). 회 2 부터 mythic 결 복귀. 1화 이탈률 절감 + 작품 voice
+  통일성 보존.
 변경 파일: NOVEL-INDEX.md / outline.md (3곳: 회 50·Arc 4 작별 분배·
-회 213-215) / chapters/ch_50_voice_calibration.md.
-다음 = (a) 4번 보류 항목 사용자 결정 후 회 1 시필 close 톤 부분 보강,
-또는 (b) 옵션 A writing-plans 진입 (Arc 1 implementation plan 작성).
+회 213-215) / chapters/ch_50_voice_calibration.md /
+chapters/ch_01_voice_calibration.md (광장 장면 close 톤 교체).
+다음 = 옵션 A writing-plans 진입 (Arc 1 implementation plan 작성).
+plan Step 1 reference 로 cycle 8 시필 4편 (회 1 close + 회 7 + 회 9
+시샤 + 회 50) 사용.
 
 이전 작업: 2026-05-03 — reader 패널 4-페르소나 평가 + 합의 반영 (cycle 7).
 4-페르소나 reader 패널 (편집자·장르독자·작가·첫독자) 병렬 서브에이

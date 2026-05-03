@@ -4,7 +4,7 @@
   "title": "사막의 무명신",
   "language": "ko",
   "format": "korean_web_novel",
-  "current_focus": "phase 1 cycle 8 — 시장 관점 외부 검토 반영. 시놉 후크 강도 격상 (NOVEL-INDEX.md '단 한 마디') + 회 50 자흐라 그림자 톤 ('기다림' 으로 재정착, outline + ch_50 시필) + 회 213-215 결말 보상 시그널 일찍 (outline Arc 4) + 잊힌 신·하셈 작별 분배 (outline 회 180·195 plant). 푸시백 3개 (회 1 노파 광장 발화·회 3 어휘 추가·회 5 micro-사이다). 보류 1개 (회 1 voice close 톤 — panel vs 시장 trade-off, 사용자 결정 대기). 다음 = (a) 보류 항목 결정 또는 (b) writing-plans 진입",
+  "current_focus": "phase 1 cycle 8 완료 — 시장 관점 외부 검토 4개 적용 + 보류 1개 해소. 시놉 후크 강도 격상 + 회 50 자흐라 그림자 톤 + 회 213-215 결말 보상 + 잊힌 신 작별 분배 + 회 1 시필 광장 장면 close 톤 교체 (사용자 옵션 B 채택). 푸시백 3개 유지 (회 1 노파 광장 발화·회 3 어휘 추가·회 5 micro-사이다). 다음 = writing-plans skill 진입 → Arc 1 implementation plan 작성",
   "iteration": 8,
   "last_updated": "2026-05-03",
   "foundation_score": 7.7,
@@ -248,5 +248,5 @@
     "mystery_author_only": "MYSTERY.md",
     "anti_slop_ko": "ANTI-SLOP-KO.md"
   },
-  "next_recommended_step": "cycle 8 완료 — 시장 관점 외부 검토 4개 적용 (시놉 후크 / 회 50 자흐라 톤 / 회 213-215 보상 시그널 일찍 / 잊힌 신·하셈 작별 분배). 보류 1개 = 회 1 voice close 톤 한 단계 (panel 4/4 통과 vs 시장 1화 이탈 trade-off). 사용자 결정 후 (a) 회 1 시필 부분 보강 또는 (b) writing-plans skill 호출 → Arc 1 implementation plan 작성."
+  "next_recommended_step": "cycle 8 완료 — 시장 관점 외부 검토 4개 적용 + 보류 1개 해소 (회 1 광장 장면 close 톤 교체). 다음 = writing-plans skill 호출 → Arc 1 (1-50회) implementation plan 작성. plan Step 1 reference = cycle 8 시필 4편 (회 1 close + 회 7 + 회 9 시샤 + 회 50)."
 }
