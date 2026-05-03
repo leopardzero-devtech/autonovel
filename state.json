@@ -4,8 +4,8 @@
   "title": "사막의 무명신",
   "language": "ko",
   "format": "korean_web_novel",
-  "current_focus": "phase 1 cycle 5 — 외부 검토 Red Flag (Arc 4 압축·회 1-10 power 발화·시놉 후크) 처방. Arc 4 30→50화 확장, 회 7-8 잊힌 신 첫 사회적 power, F-22 회 1·회 2 분리, 외부 공유용 후크 시놉 추가",
-  "iteration": 5,
+  "current_focus": "phase 1 cycle 6 — voice 시필 3편 작성 완료 (회 1 in medias res / 회 7 잊힌 신 첫 사회적 power / 회 50 도용 자각). D1 숙제(한국 웹소설 호흡 시필 미작성) 해소. 다음 = 시필 품질 점검(reader 패널) 또는 본 작업 진입",
+  "iteration": 6,
   "last_updated": "2026-05-03",
   "foundation_score": 7.7,
   "lore_score": 8.4,
@@ -38,10 +38,6 @@
     }
   },
   "debts": [
-    {
-      "type": "voice_korean_webnovel",
-      "note": "voice.md Part 2 가 캐릭터별 voice 차별화와 회차 호흡 룰을 명세했지만 실제 시필(exemplar) 은 5개로 영문 단권 기준에 가까움. 한국 웹소설 회당 5,000-5,200자 호흡의 시필이 아직 없음. drafting 진입 전 회 1·회 4·회 50 의 시필 필요. **외부 검토 반영 추가**: 시점 거리감 충돌 (mythic 결 vs 정주행 호흡) 을 시필로 실증해 색·아우라 묘사 가이드의 임계 조정 필요."
-    },
     {
       "type": "anti_slop_ko_validation",
       "note": "ANTI-SLOP-KO.md 가 새 사전이라 통계 임계가 추측치. 첫 5-10회 작성 후 실제 빈도와 비교해 임계 조정 필요."
@@ -184,6 +180,27 @@
         "state.json"
       ],
       "decision": "keep — Red Flag 1·2·4 spec 에 반영, Red Flag 3 외부 공유 후크로 분리 처방. 작품 분량 200화+ → 220화+ (Arc 4 정직한 호흡 확보). 다음 권장 = voice 시필 (회 1 in medias res, 회 7 잊힌 신 첫 사회적 power, 회 50 도용 자각 클라) 로 실증."
+    },
+    {
+      "iteration": 6,
+      "date": "2026-05-03",
+      "type": "voice_calibration_exemplars",
+      "summary": "한국 웹소설 회당 5,000-5,200자 호흡의 voice 시필 3편 작성. D1 숙제 해소.",
+      "actions_taken": [
+        "chapters/ch_01_voice_calibration.md (5,024자) — 회 1 in medias res. 의식의 끝 침묵 → 새벽·도성 길·12 사제 호명 회상 → 다시 침묵 → 광장 끌어냄 → 신전 격리 → 신왕 진한 금빛 도착 → 노파 풍요 결 흐려짐. plant: F-01·F-02·F-21·F-22a.",
+        "chapters/ch_07_voice_calibration.md (5,147자) — 회 7 잊힌 신 첫 사회적 power. 약방 노파 마지막 차 → 검은 자국 약속 → 노파 떠남 → 외성 골목 비명 → 외성 노인이 노파 진짜 이름 한 단어 떠올렸다 잊음 → 노파 마지막 '기억하라' + 잊힌 신 음 겹침. plant: F-26 신규 발화 + F-23 누적.",
+        "chapters/ch_50_voice_calibration.md (5,081자) — 회 50 Arc 1 클라. 모래 언덕 4자 대치 → 사막 신탁 vs 사막 신탁 → 셈한 결단 → 잊힌 신 4 turn 대화 → 무한 자국 옮겨짐 → '도용' 한 단어 자각 → '내가 부족해서가 아니었다' → 자흐라 그림자. plant 수확: F-01·F-22b·F-25 + F-14 echo.",
+        "ANTI-SLOP-KO Tier 1·2·3·4·6 mechanical 검진 결과 3편 모두 깨끗. Tier 5 강조부사 '너무' 회 1 에 1회 (룰 회당 2-3회 이내).",
+        "검증된 voice 결: mythic 거리감 + 정주행 사건 호흡 양립, 색·아우라 가이드 (보석 비유 0회·인공 색명 0회·자연물 결합) 작동, 인물별 voice 차별화 (하셈 짧은 명사문·라이샤르 정중·잊힌 신 한 호흡 길음), 회차 마지막 시각 cliffhanger 3편 모두."
+      ],
+      "files_changed": [
+        "chapters/ch_01_voice_calibration.md (신규)",
+        "chapters/ch_07_voice_calibration.md (신규)",
+        "chapters/ch_50_voice_calibration.md (신규)",
+        "STATUS.md",
+        "state.json"
+      ],
+      "decision": "keep — D1 숙제 해소. 시필 3편이 voice.md Part 2 의 가설을 5,000-5,200자 호흡에서 실증. 다음 권장 = (a) reader 패널 4-페르소나 평가로 약점 도출, 또는 (b) 본 작업 진입 (회 1 부터 정식 drafting)."
     }
   ],
   "files": {
@@ -199,5 +216,5 @@
     "mystery_author_only": "MYSTERY.md",
     "anti_slop_ko": "ANTI-SLOP-KO.md"
   },
-  "next_recommended_step": "옵션 A. voice calibration — 회 1·회 4·회 50 시필 작성 → ANTI-SLOP-KO 임계 조정 → voice.md 보강. STATUS.md 의 옵션 A 참조."
+  "next_recommended_step": "voice 시필 3편 완성. 다음 = (a) reader 패널 4-페르소나 평가 또는 (b) 본 작업 진입 (회 1 부터 정식 drafting). STATUS.md 참조."
 }
